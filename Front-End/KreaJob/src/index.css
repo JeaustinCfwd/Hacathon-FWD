@@ -1,6 +1,15 @@
 /* Importing Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import "tailwindcss";
+
+/* Custom theme configuration for Tailwind v4 */
+@theme {
+  --color-primary: #137fec;
+  --color-background-dark: #101922;
+  --font-display: 'Manrope', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +19,17 @@
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
-  background: #5F41E4;
+  background: #F2F4F6;
 }
 
 #root {
   width: 100%;
-  padding: 0.6rem;
+  flex: 1;
 }
 
+/* Login page specific styles */
 .login-container {
   margin: 0 auto;
   max-width: 410px;
